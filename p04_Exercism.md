@@ -1,9 +1,9 @@
-# Práctica 2. Programas simples
+# Práctica 2. Programas Simples (II). Exercism
 ### Factor de ponderación: 5
 
 ### Objetivos
 Los objetivos de esta práctica son:
-* 
+  
 * Ser capaz de realizar programas simples en JavaScript
 * Conocer y saber utilizar la plataforma Exercism
 * Conocer y poner en prácticas las recomendaciones de la Guía de Estilo de Google para JavaScript
@@ -11,7 +11,7 @@ Los objetivos de esta práctica son:
 ### Rúbrica de evaluacion del ejercicio
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar esta práctica:
-* El alumnado ha de acreditar que es capaz de desarrollar y ejecutar programas simples
+* El alumnado ha de acreditar que es capaz de desarrollar y ejecutar programas de la plataforma Exercism
 * El alumnado debe ser capaz de subir la solución a un problema de Exercism a esa plataforma
 * Se comprobará que el código que el alumnado escribe se adhiere a las reglas de la Guía de Estilo que se
   usará en la asignatura
@@ -38,32 +38,23 @@ Preste particular atención a los siguientes aspectos:
   descripción más o menos exhaustiva del programa en cuestión
 Esa guía de estilo es la que se utilizará en la asignatura y la conformidad de todos los programas presentados como prácticas es un requisito en la evaluación de los mismos.
 
-Estudie 
-[esta referencia](https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/) 
-para aprender a trabajar con parámetros pasados en línea de comandos a un programa ejecutado con Node.js.
-
-Este [código de ejemplo](https://repl.it/@fsande/commandLineArguments) (ejecútelo en la consola de Node, no en el REPL.it) puede servirle de ayuda inicialmente.
-
-No lo necesitará para Exercism, pero pruebe a ejecutar todos los programas que escriba pasándole parámetros
-por línea de comandos.
-
-
-### Armstrong Numbers
+### Prime Factors
 Localice en el track de JavaScript de Exercism el problema 
-[Armstrong Numbers](https://exercism.io/my/solutions/5e1f0bde06fb41e78acbfb2312181821) 
+[*Prime Factors*](https://exercism.io/my/solutions/fce10654772240b3b22955cd5aeb855a)
 y descárguelo en su máquina virtual. 
-Resuelva ese problema.
-
-Si analiza el programa que realiza los tests (`armstrong-numbers.spec.js`) observará que necesita Ud. programar una función `isArmstrongNumber()`
-que tome como parámetro un número entero y devuelva un valor booleano indicando si el parámetro es o no un
-número de Armstrong.
+Resuelva ese problema. 
 
 La función que ha de escribir es una *arrow function* que tendría la siguiente *signature*:
 
 ```js
-export const isArmstrongNumber = (number) => {
+export const primeFactors = () => {
 };
 ```
+que tendrá como parámetro un número entero y ha de devolver un array que contenga todos los factores primos del número pasado como parámetro.
+
+Estudie
+[este tutorial](https://javascript.info/array)
+para conocer los fundamentos necesarios para trabajar con arrays en JavaScript. 
 
 Ejecute los tests que acompañan al problema para comprobar que todos pasan correctamente y cuando lo consiga, suba su solución a Exercism.
 
@@ -72,34 +63,21 @@ con la suya.
 
 Una vez que su programa funcione en consola, consiga que funcione en una página web similar a la que se ha usado para el cálculo de Pi. 
 
-### Darts
+### Strain
 Localice en el track de JavaScript de Exercism el problema 
-[Darts](https://exercism.io/my/solutions/de65d30c065c435b82911b0c7ca10b0c)
+[*Strain*](https://exercism.io/my/solutions/03d029e7331642fd8a15501eb1ae64bf)
 y descárguelo en su máquina virtual. 
-Resuelva ese problema.
+Resuelva ese problema. 
 
-Ejecute los tests que acompañan al problema para comprobar que todos pasan correctamente y cuando lo consiga, suba su solución a Exercism.
+Las funciones que ha de programar, *keep()* y *discard()* toman ambas dos parámetros, un array 
+y una función booleana (un predicado) y devuelven un array que contiene (keep) o no (discard) 
+los elementos del array de entrada para los que el predicado es cierto.
 
-Una vez que suba su solución a la plataforma, revise la solución que hayan subido otros usuarios y compárelas
-con la suya.
-
-### Nth Prime
+### Yacht
 Localice en el track de JavaScript de Exercism el problema 
-[Nth Prime](https://exercism.io/my/solutions/07630f17544c4c4ca7cc30fa69c51e7e)
-y descárguelo en su máquina virtual. Resuelva ese problema.
+[*Yacht*](https://exercism.io/my/solutions/5f2e1e4332fd419abf2ea365b05b4e3b)
+y descárguelo en su máquina virtual. Resuelva ese problema. 
 
-Para lanzar una excepción (que es lo que se espera en el caso de un parámetro negativo o nulo en este problema) en JavaScript utilice una sentencia como:
-```js
-throw new Error('Mensaje a mostrar cuando se produce el error');
-```
-
-Para saber más sobre las excepciones en JavaScript estudie el apartado
-[Exceptions](https://eloquentjavascript.net/08_error.html) 
-en el capítulo 8 de *Eloquent JavaScript*, y el apartado
-[“Throw” operator](https://javascript.info/try-catch#throw-operator)
-en el *Modern JavaScript Tutorial*.
-
-Ejecute los tests que acompañan al problema para comprobar que todos pasan correctamente y cuando lo consiga, suba su solución a Exercism.
-
-Una vez que suba su solución a la plataforma, revise la solución que hayan subido otros usuarios y compárelas
-con la suya.
+Si analiza el programa que realiza los tests (`yacht.spec.js`) observará que la función *score()* ha de tener dos parámetros: 
+un array con las puntuaciones de los lanzamientos de 5 dados y una cadena (string) con el nombre de la jugada y ha de devolver 
+la puntuación correspondiente a esa jugada.
